@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headersatu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  color: white;
+  font-size: 3vmax;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.headerdua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  color: white;
+  font-size: 1vmax;
+  margin-top: 0px;
+}/*# sourceMappingURL=styles.css.map */
