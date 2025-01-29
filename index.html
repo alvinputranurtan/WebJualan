@@ -1,53 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="header finisher-header" style="width: 100%; height: 25vw;">
-        <p class="headersatu">Alvin Store.</p>
-        <p class="headerdua">Tempat Belanja Kebutuhan Otomotif</p>
-      </div>
-      <script src="finisher-header.es5.min.js" type="text/javascript"></script>
-      <script type="text/javascript">
-        new FinisherHeader({
-          "count": 6,
-          "size": {
-            "min": 1100,
-            "max": 1300,
-            "pulse": 0.1
-          },
-          "speed": {
-            "x": {
-              "min": 0,
-              "max": 0.1
-            },
-            "y": {
-              "min": 0,
-              "max": 0.1
-            }
-          },
-          "colors": {
-            "background": "#9138e5",
-            "particles": [
-              "#6bd6ff",
-              "#ffcb57",
-              "#ff333d"
-            ]
-          },
-          "blending": "lighten",
-          "opacity": {
-            "center": 1,
-            "edge": 0.1
-          },
-          "skew": 0,
-          "shapes": [
-            "c"
-          ]
-        });
-        </script>
-</body>
-</html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;  /* Pastikan body penuh */
+  overflow-x: hidden; /* Hindari overflow horizontal */
+  background: linear-gradient(270deg, #fdf0f3, #ffecf9, #ffeeee, #ebefff);
+  background-size: 400% 400%;
+  animation: gradientBG1 40s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headersatu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5vmax;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.headerdua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2vmax;
+  margin-top: 0px;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.container1 {
+  padding: 2vmax;
+}
+
+.container2 {
+  background: linear-gradient(120deg, #ffaef0, #fad0c4);
+  background-size: 100% 100%;
+  animation: gradientBG2 25s ease infinite;
+  border: 0.5px solid rgb(150, 150, 150);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px; /* Agar sudut lebih halus */
+  transition: transform 0.2s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientBG2 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container2:hover {
+  transform: scale(1.02); /* Efek hover */
+}
+
+.container2 img {
+  width: 80px; /* Lebih proporsional */
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+.container2 p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Agar warna teks tetap mengikuti tema */
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
