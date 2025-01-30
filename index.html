@@ -15,65 +15,64 @@
       <div class="container">
 
         <div class="container1">
-        <a href="https://wa.me/+62882007085761?text=Saya datang dari web, mau pesan oli." target="_blank">
-          <div class="container2">
+          <div class="container2" onclick="showPopup('Deltalube 757 10w40 / 0,8l', 75000)">
               <img src="Media/gambaroli.png" alt="Gambar oli">
-            <div>
-              <p>Deltalube 757 10w40 / 0,8l</p>
-            </div>
+              <div>
+                  <p>Deltalube 757 10w40 / 0,8l</p>
+              </div>
           </div>
-        </a>
       </div>
 
-<div class="container1">
-        <a href="https://wa.me/+62882007085761?text=Saya datang dari web, mau pesan oli." target="_blank">
-          <div class="container2">
-              <img src="Media/gambaroli.png" alt="Gambar oli">
+      <div class="container1">
+        <div class="container2" onclick="showPopup('Deltalube 757 10w40 / 0,8l', 75000)">
+            <img src="Media/gambaroli.png" alt="Gambar oli">
             <div>
-              <p>Deltalube 757 10w40 / 0,8l</p>
+                <p>Deltalube 757 10w40 / 0,8l</p>
             </div>
-          </div>
-        </a>
-</div>
-
-
-<div class="container1">
-  <a href="https://wa.me/+62882007085761?text=Saya datang dari web, mau pesan oli." target="_blank">
-    <div class="container2">
-        <img src="Media/gambaroli.png" alt="Gambar oli">
-      <div>
-        <p>Deltalube 757 10w40 / 0,8l</p>
-      </div>
+        </div>
     </div>
-  </a>
-</div>
-
 
 <div class="container1">
-  <a href="https://wa.me/+62882007085761?text=Saya datang dari web, mau pesan oli." target="_blank">
-    <div class="container2">
-        <img src="Media/gambaroli.png" alt="Gambar oli">
+  <div class="container2" onclick="showPopup('Deltalube 757 10w40 / 0,8l', 75000)">
+      <img src="Media/gambaroli.png" alt="Gambar oli">
       <div>
-        <p>Deltalube 757 10w40 / 0,8l</p>
+          <p>Deltalube 757 10w40 / 0,8l</p>
       </div>
-    </div>
-  </a>
+  </div>
 </div>
 
-
 <div class="container1">
-        <a href="https://wa.me/+62882007085761?text=Saya datang dari web, mau pesan oli." target="_blank">
-          <div class="container2">
-              <img src="Media/gambaroli.png" alt="Gambar oli">
-            <div>
-              <p>Deltalube 757 10w40 / 0,8l</p>
+  <div class="container2" onclick="showPopup('Deltalube 757 10w40 / 0,8l', 75000)">
+      <img src="Media/gambaroli.png" alt="Gambar oli">
+      <div>
+          <p>Deltalube 757 10w40 / 0,8l</p>
+      </div>
+  </div>
+</div>
+
+        <div class="container1">
+            <div class="container2" onclick="showPopup('Deltalube 757 10w40 / 0,8l', 75000)">
+                <img src="Media/gambaroli.png" alt="Gambar oli">
+                <div>
+                    <p>Deltalube 757 10w40 / 0,8l</p>
+                </div>
             </div>
-          </div>
-        </a>
-      </div>
+        </div>
 
       </div>
 
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" min="1" max="10" value="1" oninput="updatePrice()">
+            <input type="range" id="slider" min="1" max="10" value="1" oninput="syncInput()">
+            <p>Total Harga: <span id="total-price"></span></p>
+            <a id="order-link" href="#" target="_blank">Pesan Sekarang</a>
+        </div>
+      </div>
 
 
       <script src="finisher-header.es5.min.js" type="text/javascript"></script>
@@ -114,5 +113,9 @@
           ]
         });
         </script>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
