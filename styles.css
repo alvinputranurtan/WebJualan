@@ -125,8 +125,10 @@ a {
 .popup-content {
   background: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
+  width: 45vmax;
+  height: 30vmax;
 }
 
 .close {
