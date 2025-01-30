@@ -67,7 +67,7 @@
             <span class="close" onclick="closePopup()">&times;</span>
             <h2 id="popup-title"></h2>
             <label for="quantity">Jumlah:</label>
-            <input type="number" id="quantity" min="1" max="10" value="1" oninput="updatePrice()">
+            <input type="number" id="quantity" min="1" max="10" value="1" oninput="updatePrice()" step="1">
             <input type="range" id="slider" min="1" max="10" value="1" oninput="syncInput()">
             <p>Total Harga: <span id="total-price"></span></p>
             <a id="order-link" href="#" target="_blank">Pesan Sekarang</a>
